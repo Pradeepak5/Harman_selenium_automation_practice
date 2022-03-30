@@ -7,11 +7,11 @@ driver=webdriver.Chrome(ChromeDriverManager().install())
 
 driver.maximize_window()
 
-driver.get("https://www.w3schools.com/")
-driver.find_element_by_link_text("Tutorials").click()
+driver.get("https://www.amazon.in/")
 time.sleep(2)
-driver.find_element_by_link_text("Learn Python").click()
+driver.find_element_by_id("twotabsearchtextbox").send_keys("wrist watch")
 time.sleep(2)
-driver.find_element_by_link_text("Python MySQL Tutorial").click()
-time.sleep(4)
+driver.find_element_by_id("nav-search-submit-button").click()
+time.sleep(5)
+
 driver.close()
