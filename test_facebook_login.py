@@ -15,7 +15,7 @@ driver.get("https://www.facebook.com/")
 driver.find_element_by_name("email").send_keys("8270748551")
 driver.find_element_by_name("pass").send_keys("Pradeep@571")
 driver.find_element_by_name("login").send_keys(Keys.ENTER)
-time.sleep(15)
+time.sleep(10)
 
 driver.close()
 
